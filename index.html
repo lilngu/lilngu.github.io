@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Pangolin', cursive;
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        th, td {
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #f1f1f1;
+        }
+
+        th.time, td.time {
+            color: #006400;
+            font-weight: bold;
+        }
+
+        th.place, td.place {
+            color: #0000FF;
+            font-weight: bold;
+        }
+
+        td.activity {
+            font-weight: bold;
+        }
+
+        td.transportation {
+            color: #6d250f;
+            font-weight: bold;
+        }
+
+        .note {
+            margin-top: 20px;
+        }
+
+        .image-container {
+            max-width: 70%;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .image-container img {
+            width: 100%;
+            max-width: 100%;
+            margin-bottom: 10px;
+        }
+
+        .image-container img:nth-child(2n) {
+            margin-left: 2.5%;
+            margin-right: 2.5%;
+        }
+
+        .day {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        .day-header {
+            background-color: #d3eaf7;
+            border-bottom: 2px solid #006400;
+            padding: 10px;
+        }
+
+        .day-content {
+            padding: 10px;
+            border-top: 2px solid #006400;
+        }
+
+        hr {
+            border-color: #006400;
+            border-width: 2px;
+            margin-top: 20px;
+        }
+        .bold-numbers {
+      font-weight: bold;
+    }
+    </style>
+    <title>Travel Itinerary</title>
+</head>
+
+<body>
+    <h1>Lịch trình Du lịch SIngapore</h1>
+
+    <div class="day">
+        <div class="day-header">
+            <h2>Ngày 28/6</h2>
+        </div>
+        <div class="day-content">
+            <table>
+                <tr>
+                    <th>Thời gian</th>
+                    <th>Hoạt động</th>
+                    <th>Địa điểm</th>
+                    <th>Cách di chuyển</th>
+                </tr>
+                <tr>
+                    <td class="time">17:00</td>
+                    <td class="activity">Đến sân bay Changi</td>
+                    <td class="place">Terminal 4</td>
+                    <td class="transportation">Plane</td>
+                </tr>
+                <tr>
+                    <td class="time">17:30 - 19:00</td>
+                    <td class="activity">Di chuyển đến khu Jewel ở Terminal 1, check-in, ăn Bakuteh Song Fa và tham quan</td>
+                    <td class="place">Jewel ở Terminal 1</td>
+                    <td class="transportation">Bus</td>
+                </tr>
+                <tr>
+                    <td class="time">19:00 - 20:00</td>
+                    <td class="activity">Đi MRT từ sân bay Changi đến Bendemeer Station, sau đó đi bộ đến Hotel 81 Elegance ở đường Foch</td>
+                    <td class="place">Hotel 81 Elegance</td>
+                    <td class="transportation">MRT</td>
+                </tr>
+                <tr>
+                    <td class="time">20:00</td>
+                    <td class="activity">Nhận phòng và nghỉ ngơi</td>
+                    <td class="place"></td>
+                    <td class="transportation"></td>
+                </tr>
+            </table>
+            <div class="note">
+                <h3>Chú thích:</h3>
+                <p>Chúng ta bắt đầu hành trình tại sân bay Changi, Terminal 4. Sau khi kiểm tra thủ tục, chúng ta sẽ di chuyển đến khu Jewel ở Terminal 1 để trải nghiệm một không gian nội thất tuyệt đẹp và độc đáo. Đây là một điểm đến nổi tiếng với cảnh quan tuyệt đẹp, khu vườn treo cao ngất, và cả những hoạt động giải trí thú vị. Hãy chụp những bức ảnh đẹp để lưu giữ những kỷ niệm đầu tiên của chuyến du lịch.
+
+                    Tiếp theo, chúng ta sẽ đi MRT từ sân bay Changi đến Lavender Station và sau đó đi bộ đến Hotel 81 Elegance ở đường Foch. Tại đây, chúng ta sẽ nhận phòng và có thời gian nghỉ ngơi sau chuyến bay dài.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="day">
+        <div class="day-header">
+            <h2>Ngày 29/6</h2>
+        </div>
+        <div class="day-content">
+            <table>
+                <tr>
+                    <th>Thời gian</th>
+                    <th>Hoạt động</th>
+                    <th>Địa điểm</th>
+                    <th>Cách di chuyển</th>
+                </tr>
+                <tr>
+                    <td class="time">07:00 - 08:00</td>
+                    <td class="activity">Ăn sáng tại khách sạn</td>
+                    <td class="place"></td>
+                    <td class="transportation"></td>
+                </tr>
+                <tr>
+                    <td class="time">08:30 - 10:00</td>
+                    <td class="activity">Đi MRT từ Lavender đến Raffles Place, tham quan tượng Merlion</td>
+                    <td class="place">Raffles</td>
+                    <td class="transportation">MRT</td>
+                </tr>
+                <tr>
+                    <td class="time">10:00 - 10:30</td>
+                    <td class="activity">Ghé cửa hàng 7-Eleven gần đó</td>
+                    <td class="place">Merlion</td>
+                    <td class="transportation">Walk</td>
+                </tr>
+                <tr>
+                    <td class="time">11:00 - 13:00</td>
+                    <td class="activity">Đi MRT từ Raffles Place đến Bayfront, tham quan ArtScience Museum</td>
+                    <td class="place">ArtScience Museum</td>
+                    <td class="transportation"></td>
+                </tr>
+                <tr>
+                    <td class="time">13:00 - 14:00</td>
+                    <td class="activity">Ăn trưa </td>
+                    <td class="place">Satay by the Bay</td>
+                    <td class="transportation">Walk</td>
+                </tr>
+                <tr>
+                    <td class="time">14:30 - 16:30</td>
+                    <td class="activity">Tham quan Flower Dome và Avatar The Experience </td>
+                    <td class="place">ở Gardens by the Bay</td>
+                    <td class="transportation">Walk</td>
+                </tr>
+                <tr>
+                    <td class="time">17:00 - 18:30</td>
+                    <td class="activity">Ăn tối </td>
+                    <td class="place">Marina Bay Sands</td>
+                    <td class="transportation">walk</td>
+                </tr>
+                <tr>
+                    <td class="time">20:00 - 20:15</td>
+                    <td class="activity">Xem show nhạc nước</td>
+                    <td class="place"> Marina Bay Sands</td>
+                    <td class="transportation">walk</td>
+                </tr>
+                <tr>
+                    <td class="time">20:30 - 21:00</td>
+                    <td class="activity">Đi MRT từ Bayfront về Lavender, sau đó đi bộ về khách sạn</td>
+                    <td class="place"></td>
+                    <td class="transportation">MRT</td>
+                </tr>
+            </table>
+            <div class="note">
+                <h3>Chú thích:</h3>
+                <p>Buổi sáng, sau khi thưởng thức bữa sáng tại khách sạn, chúng ta sẽ bắt đầu ngày mới bằng việc đi MRT từ Lavender đến Raffles Place để tham quan tượng Merlion. Đây là biểu tượng của Singapore và một địa điểm không thể bỏ qua. Hãy chuẩn bị máy ảnh để chụp những bức ảnh độc đáo với nền cảnh Marina Bay Sands và tòa nhà công viên công cộng.
+
+                    Sau khi tham quan Merlion, chúng ta có thể ghé qua một cửa hàng 7-Eleven gần đó để mua đồ ăn nhẹ hoặc thức uống trước khi tiếp tục hành trình.
+                    
+                    Trưa, chúng ta sẽ đi MRT từ Raffles Place đến Bayfront để tham quan ArtScience Museum. Đây là một bảo tàng nghệ thuật hiện đại với các triển lãm đa dạng và độc đáo. Hãy thưởng thức những tác phẩm nghệ thuật tuyệt vời và khám phá sự kết hợp tuyệt vời giữa nghệ thuật và khoa học.
+                    
+                    Sau khi tham quan, hãy dành thời gian để thưởng thức bữa trưa tại Satay by the Bay, một khu ẩm thực nằm cạnh vịnh Marina với nhiều món ăn đặc trưng của Singapore.
+                    
+                    Buổi chiều, chúng ta sẽ tiếp tục hành trình đến Gardens by the Bay để tham quan Flower Dome và Avatar The Experience. Flower Dome là một trong những nhà kính lớn nhất thế giới, nơi bạn sẽ bị choáng ngợp bởi vẻ đẹp của các loài hoa và cây cối đa dạng. Còn Avatar The Experience là một trải nghiệm sống động mang bạn vào thế giới ảo tưởng như trong bộ phim "Avatar". Đây là cơ hội tuyệt vời để tận hưởng môi trường xanh tươi và khám phá các loài cây lạ thú.
+                    
+                    Buổi tối, chúng ta sẽ thưởng thức bữa tối tại Marina Bay Sands. Đây là một khu vực có nhiều nhà hàng và quầy bar sang trọng, cho phép bạn thưởng thức ẩm thực quốc tế tuyệt vời. Sau bữa tối, hãy không bỏ lỡ cơ hội xem show nhạc nước tại Marina Bay Sands. Màn trình diễn ánh sáng, nước và âm nhạc độc đáo sẽ khiến bạn say đắm trong không gian kỳ diệu của nó.
+                    
+                    Cuối cùng, hãy đi MRT từ Bayfront về Lavender, sau đó đi bộ về khách sạn để nghỉ ngơi sau một ngày dài tràn đầy trải nghiệm.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="day">
+        <div class="day-header">
+            <h2>Ngày 30/6</h2>
+        </div>
+        <div class="day-content">
+            <table>
+                <tr>
+                    <th>Thời gian</th>
+                    <th>Hoạt động</th>
+                    <th>Địa điểm</th>
+                    <th>Cách di chuyển</th>
+                </tr>
+                <tr>
+                    <td class="time">07:00 - 08:00</td>
+                    <td class="activity">Ăn sáng gần khách sạn</td>
+                    <td class="place"></td>
+                    <td class="transportation"></td>
+                </tr>
+                <tr>
+                    <td class="time">08:30 - 10:00</td>
+                    <td class="activity">Đi bus số 67 đến trạm NUS Bukit Timah Campus, chuyển sang bus 151 đến trạm NUS Museums, tham quan bảo tàng </td>
+                    <td class="place">Lee Kong Chian</td>
+                    <td class="transportation">Bus</td>
+                </tr>
+                <tr>
+                    <td class="time">12:00 - 13:00</td>
+                    <td class="activity">Đi bus 151 đến Chinatown Station, ăn trưa tại Shanghai Fried Xiao Long Bao, </td>
+                    <td class="place">khu Chinatown</td>
+                    <td class="transportation">bus</td>
+                </tr>
+                <tr>
+                    <td class="time">14:00 - 16:00</td>
+                    <td class="activity">Đi MRT từ Chinatown đến HarbourFront, mua đồ ăn tại VivoCity, sau đó đi Sentosa Express đến Sentosa, di chuyển đến Magical Shores Sentosa</td>
+                    <td class="place">Vivo City - Sentosa </td>
+                    <td class="transportation">MRT - Sentosa Express</td>
+                </tr>
+                <tr>
+                    <td class="time">19:00 - 19:30</td>
+                    <td class="activity">Xem biểu diễn nhạc nước tại Siloso Beach, Sentosa</td>
+                    <td class="place">Sentosa</td>
+                    <td class="transportation">tram bus</td>
+                </tr>
+                <tr>
+                    <td class="time">20:00 - 21:00</td>
+                    <td class="activity">về VivoCity, ăn tối tại Dancing Crab</td>
+                    <td class="place">Vivo City</td>
+                    <td class="transportation">Sentosa Express </td>
+                </tr>
+                <tr>
+                    <td class="time">21:30 - 22:00</td>
+                    <td class="activity">Đi MRT từ HarbourFront đến Clarke Quay, ăn kem .</td>
+                    <td class="place">Clarke Quay</td>
+                    <td class="transportation">MRT</td>
+                </tr>
+            </table>
+            <div class="note">
+                <h3>Chú thích:</h3>
+                <p>Buổi sáng, hãy bắt đầu ngày mới bằng việc thưởng thức một bữa sáng ngon gần khách sạn để nạp năng lượng cho một ngày khám phá tiếp theo.
+
+                    Sau đó, chúng ta sẽ đi bus số 67 từ Lavender đến trạm NUS Bukit Timah Campus, rồi chuyển sang bus 151 để đến NUS Museums và tham quan bảo tàng Lee Kong Chian. Đây là một bảo tàng nghệ thuật và lịch sử độc đáo, nơi bạn có thể khám phá những kiệt tác nghệ thuật và hiểu thêm về lịch sử và văn hóa của Singapore.
+                    
+                    Buổi trưa, hãy đi bus 151 đến Chinatown Station và thưởng thức bữa trưa tại Shanghai Fried Xiao Long Bao, một nhà hàng nổi tiếng với món xiao long bao ngon lành. Sau đó, bạn có thể dạo quanh khu Chinatown để mua sắm đồ lưu niệm và khám phá thêm văn hóa truyền thống của Singapore.
+                    
+                    Buổi chiều, chúng ta sẽ đi MRT từ Chinatown đến HarbourFront để mua đồ ăn tại VivoCity, sau đó đi Sentosa Express đến Sentosa để tận hưởng Magical Shores Sentosa. Đây là một sự kiện ánh sáng độc đáo với hiệu ứng ánh sáng mê hoặc và âm nhạc sôi động. Hãy chuẩn bị cho một trải nghiệm tuyệt vời trong không gian ma thuật.
+                    
+                    Buổi tối, hãy đến Siloso Beach để thưởng thức biểu diễn nhạc nước độc đáo. Bạn sẽ được chứng kiến màn trình diễn ánh sáng, nước và âm nhạc tuyệt vời trên bãi biển đẹp của Sentosa.
+                    
+                    Sau đó, hãy đi Sentosa Express về VivoCity và tận hưởng bữa tối tại Dancing Crab, một nhà hàng nổi tiếng với món cua và hải sản tươi ngon. Đừng quên thưởng thức một ly kem ngon tại khu Clarke Quay trước khi trở về khách sạn. Hãy đi MRT từ HarbourFront đến Clarke Quay và thưởng thức những món kem ngon ngọt tại đây.
+                    
+                    Cuối cùng, đi MRT từ Clarke Quay về Lavender và đi bộ về khách sạn để nghỉ ngơi và sẵn sàng cho ngày cuối cùng của chuyến đi.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="schedule">
+        <div class="day">
+            <div class="day-header">
+                <h2>Ngày 1/7</h2>
+            </div>
+            <div class="day-content">
+                <table>
+                    <tr>
+                        <th>Thời gian</th>
+                        <th>Hoạt động</th>
+                        <th>Địa điểm</th>
+                        <th>Cách di chuyển</th>
+                    </tr>
+                    <tr>
+                        <td class="time">07:00 - 08:00</td>
+                        <td class="activity">Ăn sáng tại khách sạn</td>
+                        <td class="place"></td>
+                        <td class="transportation"></td>
+                    </tr>
+                    <tr>
+                        <td class="time">08:30 - 10:00</td>
+                        <td class="activity">Đi MRT từ Lavender đến Little India, ăn Muthu Curry và dạo phố</td>
+                        <td class="place">Little India</td>
+                        <td class="transportation">MRT</td>
+                    </tr>
+                    <tr>
+                        <td class="time">10:30 - 12:00</td>
+                        <td class="activity">Đi MRT từ Little India đến Dhoby Ghaut, tham quan Fort Canning</td>
+                        <td class="place">Fort Canning</td>
+                        <td class="transportation">MRT</td>
+                    </tr>
+                    <tr>
+                        <td class="time">12:30 - 14:00</td>
+                        <td class="activity">Đi MRT đến Bugis, mua sắm đồ lưu niệm và ăn uống tại Bugis, thử chè tại Ah Chew Desserts</td>
+                        <td class="place">Bugis</td>
+                        <td class="transportation">MRT</td>
+                    </tr>
+                    <tr>
+                        <td class="time">14:30 - 16:30</td>
+                        <td class="activity">Đi bộ tới Sultan Mosque, tham quan Haji Lane và thưởng thức trà</td>
+                        <td class="place">Haji Lane</td>
+                        <td class="transportation">Walk</td>
+                    </tr>
+                    <tr>
+                        <td class="time">17:00 - 18:30</td>
+                        <td class="activity">Đi bus 130 từ trạm Stamford Pr Sch đến trạm Bef Tai Hoe Hotel, mua sắm </td>
+                        <td class="place">FairPrice City Square Mall</td>
+                        <td class="transportation">Bus</td>
+                    </tr>
+                    <tr>
+                        <td class="time">18:30 - 19:00</td>
+                        <td class="activity">Đi bộ về Hotel 81 Elegance</td>
+                        <td class="place"></td>
+                        <td class="transportation"></td>
+                    </tr>
+                </table>
+                <div class="note">
+                    <h3>Chú thích:</h3>
+                    <p>Buổi sáng, sau khi thưởng thức bữa sáng tại khách sạn, chúng ta sẽ đi MRT từ Lavender đến Little India để bắt đầu ngày mới. Tại Little India, hãy thưởng thức một bữa trưa ngon tại Muthu Curry, một nhà hàng nổi tiếng với món ăn Ấn Độ đậm đà và hương vị tuyệt vời. Hãy thử các món curry, briyani, hay roti prata truyền thống và cảm nhận văn hóa ẩm thực độc đáo của Singapore.
+
+                        Sau bữa trưa, chúng ta sẽ đi MRT từ Little India đến Dhoby Ghaut để khám phá Fort Canning. Đây là một di tích lịch sử quan trọng và một công viên xanh mát nằm ở trung tâm thành phố. Hãy dạo quanh các con đường rừng và khám phá các di tích lịch sử, như bảo tàng Câu lạc bộ Lịch sử Quốc gia và Đền Hồi giáo Keramat Iskandar Shah.
+                        
+                        Buổi trưa, chúng ta sẽ đi MRT đến Bugis để tận hưởng không gian mua sắm và ẩm thực đa dạng của khu vực này. Bugis là nơi tuyệt vời để mua sắm đồ lưu niệm và quần áo thời trang với các cửa hàng và chợ độc đáo. Hãy đến Ah Chew Desserts để thưởng thức một chén chè truyền thống ngọt ngào và trái cây tươi ngon sau bữa trưa.
+                        
+                        Buổi chiều, chúng ta sẽ đi bộ đến Sultan Mosque để chiêm ngưỡng kiến trúc và văn hóa Hồi giáo. Tiếp theo, hãy khám phá Haji Lane, một con phố nhỏ đầy màu sắc với các cửa hàng thời trang độc đáo và nhà hàng quán cà phê sành điệu. Bạn có thể thưởng thức một ly trà thơm ngon và thảnh thơi trong không gian phố cổ độc đáo này.
+                        
+                        Buổi tối, chúng ta sẽ đi bus số 130 từ trạm Stamford Pr Sch đến trạm Bef Tai Hoe Hotel để khám phá FairPrice City Square Mall, một trung tâm mua sắm phổ biến ở khu vực. Đây là cơ hội để mua sắm và tìm những món đồ yêu thích của bạn.
+                        
+                        Cuối cùng, hãy đi bộ trở lại Hotel 81 Elegance để thư giãn và chuẩn bị cho chuyến bay trở về Việt Nam vào ngày hôm sau.</p>
+                </div>
+            </div>
+        </div>
+    
+        <div class="day">
+            <div class="day-header">
+                <h2>Ngày 2/7</h2>
+            </div>
+            <div class="day-content">
+                <table>
+                    <tr>
+                        <th>Thời gian</th>
+                        <th>Hoạt động</th>
+                        <th>Địa điểm</th>
+                        <th>Cách di chuyển</th>
+                    </tr>
+                    <tr>
+                        <td class="time">07:00 - 08:00</td>
+                        <td class="activity">Ăn sáng tại khách sạn</td>
+                        <td class="place"></td>
+                        <td class="transportation"></td>
+                    </tr>
+                    <tr>
+                        <td class="time">09:00</td>
+                        <td class="activity">Trả phòng khách sạn</td>
+                        <td class="place"></td>
+                        <td class="transportation"></td>
+                    </tr>
+                    <tr>
+                        <td class="time">09:30 - 10:30</td>
+                        <td class="activity">Đi MRT từ Lavender đến sân bay Changi, Terminal 4</td>
+                        <td class="place"></td>
+                        <td class="transportation"></td>
+                    </tr>
+                    <tr>
+                        <td class="time">11:00</td>
+                        <td class="activity">Bay từ Singapore về Việt Nam</td>
+                        <td class="place"></td>
+                        <td class="transportation"></td>
+                    </tr>
+                </table>
+                <div class="note">
+                    <h3>Chú thích:</h3>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+    </div>
+         
+</body>
+
+<div class="footer">
+    <p>Các hoạt động và địa điểm chỉ mang tính chất gợi ý và có thể thay đổi tùy theo sở thích và tình huống cụ thể. Vui lòng kiểm tra lịch trình và các thông tin liên quan trước khi đi du lịch.</p>
+</div>
+</html>
